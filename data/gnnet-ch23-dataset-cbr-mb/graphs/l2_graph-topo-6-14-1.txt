@@ -1,0 +1,426 @@
+graph [
+  directed 1
+  multigraph 1
+  node [
+    id 0
+    label "0"
+    type "r"
+    name "netengine6"
+  ]
+  node [
+    id 1
+    label "1"
+    type "r"
+    name "netengine7"
+  ]
+  node [
+    id 2
+    label "2"
+    type "r"
+    name "netengine8"
+  ]
+  node [
+    id 3
+    label "3"
+    type "r"
+    name "netengine9"
+  ]
+  node [
+    id 4
+    label "4"
+    type "r"
+    name "netengine10"
+  ]
+  node [
+    id 5
+    label "5"
+    type "r"
+    name "netengine1"
+  ]
+  node [
+    id 6
+    label "6"
+    type "s"
+    name "sunoll"
+  ]
+  node [
+    id 7
+    label "7"
+    type "s"
+    name "vinyater"
+  ]
+  node [
+    id 8
+    label "8"
+    type "tc"
+    name "trex1-1-c"
+  ]
+  node [
+    id 9
+    label "9"
+    type "ts"
+    name "trex1-1-s"
+  ]
+  node [
+    id 10
+    label "10"
+    type "tc"
+    name "trex1-2-c"
+  ]
+  node [
+    id 11
+    label "11"
+    type "ts"
+    name "trex1-2-s"
+  ]
+  edge [
+    source 0
+    target 7
+    key 0
+    bandwidth 1000000000
+    port "r0-s7-0"
+  ]
+  edge [
+    source 0
+    target 7
+    key 1
+    bandwidth 1000000000
+    port "r0-s7-1"
+  ]
+  edge [
+    source 0
+    target 7
+    key 2
+    bandwidth 1000000000
+    port "r0-s7-2"
+  ]
+  edge [
+    source 1
+    target 7
+    key 0
+    bandwidth 1000000000
+    port "r1-s7-0"
+  ]
+  edge [
+    source 1
+    target 7
+    key 1
+    bandwidth 1000000000
+    port "r1-s7-1"
+  ]
+  edge [
+    source 1
+    target 7
+    key 2
+    bandwidth 1000000000
+    port "r1-s7-2"
+  ]
+  edge [
+    source 2
+    target 7
+    key 0
+    bandwidth 1000000000
+    port "r2-s7-0"
+  ]
+  edge [
+    source 2
+    target 7
+    key 1
+    bandwidth 1000000000
+    port "r2-s7-1"
+  ]
+  edge [
+    source 2
+    target 7
+    key 2
+    bandwidth 1000000000
+    port "r2-s7-2"
+  ]
+  edge [
+    source 3
+    target 7
+    key 0
+    bandwidth 1000000000
+    port "r3-s7-0"
+  ]
+  edge [
+    source 3
+    target 7
+    key 1
+    bandwidth 1000000000
+    port "r3-s7-1"
+  ]
+  edge [
+    source 3
+    target 7
+    key 2
+    bandwidth 1000000000
+    port "r3-s7-2"
+  ]
+  edge [
+    source 3
+    target 7
+    key 3
+    bandwidth 1000000000
+    port "r3-s7-3"
+  ]
+  edge [
+    source 3
+    target 7
+    key 4
+    bandwidth 1000000000
+    port "r3-s7-4"
+  ]
+  edge [
+    source 4
+    target 7
+    key 0
+    bandwidth 1000000000
+    port "r4-s7-0"
+  ]
+  edge [
+    source 4
+    target 7
+    key 1
+    bandwidth 1000000000
+    port "r4-s7-1"
+  ]
+  edge [
+    source 5
+    target 6
+    key 0
+    bandwidth 1000000000
+    port "r5-s6-0"
+  ]
+  edge [
+    source 5
+    target 6
+    key 1
+    bandwidth 1000000000
+    port "r5-s6-1"
+  ]
+  edge [
+    source 5
+    target 6
+    key 2
+    bandwidth 1000000000
+    port "r5-s6-2"
+  ]
+  edge [
+    source 5
+    target 6
+    key 3
+    bandwidth 1000000000
+    port "r5-s6-3"
+  ]
+  edge [
+    source 6
+    target 5
+    key 0
+    bandwidth 1000000000
+    port "s6-r5-0"
+  ]
+  edge [
+    source 6
+    target 5
+    key 1
+    bandwidth 1000000000
+    port "s6-r5-1"
+  ]
+  edge [
+    source 6
+    target 5
+    key 2
+    bandwidth 1000000000
+    port "s6-r5-2"
+  ]
+  edge [
+    source 6
+    target 5
+    key 3
+    bandwidth 1000000000
+    port "s6-r5-3"
+  ]
+  edge [
+    source 6
+    target 10
+    key 0
+    bandwidth 10000000000
+    port "s6-t10-0"
+  ]
+  edge [
+    source 6
+    target 11
+    key 0
+    bandwidth 10000000000
+    port "s6-t11-0"
+  ]
+  edge [
+    source 6
+    target 7
+    key 0
+    bandwidth 80000000000
+    port "s6-s7-0"
+  ]
+  edge [
+    source 7
+    target 0
+    key 0
+    bandwidth 1000000000
+    port "s7-r0-0"
+  ]
+  edge [
+    source 7
+    target 0
+    key 1
+    bandwidth 1000000000
+    port "s7-r0-1"
+  ]
+  edge [
+    source 7
+    target 0
+    key 2
+    bandwidth 1000000000
+    port "s7-r0-2"
+  ]
+  edge [
+    source 7
+    target 1
+    key 0
+    bandwidth 1000000000
+    port "s7-r1-0"
+  ]
+  edge [
+    source 7
+    target 1
+    key 1
+    bandwidth 1000000000
+    port "s7-r1-1"
+  ]
+  edge [
+    source 7
+    target 1
+    key 2
+    bandwidth 1000000000
+    port "s7-r1-2"
+  ]
+  edge [
+    source 7
+    target 2
+    key 0
+    bandwidth 1000000000
+    port "s7-r2-0"
+  ]
+  edge [
+    source 7
+    target 2
+    key 1
+    bandwidth 1000000000
+    port "s7-r2-1"
+  ]
+  edge [
+    source 7
+    target 2
+    key 2
+    bandwidth 1000000000
+    port "s7-r2-2"
+  ]
+  edge [
+    source 7
+    target 3
+    key 0
+    bandwidth 1000000000
+    port "s7-r3-0"
+  ]
+  edge [
+    source 7
+    target 3
+    key 1
+    bandwidth 1000000000
+    port "s7-r3-1"
+  ]
+  edge [
+    source 7
+    target 3
+    key 2
+    bandwidth 1000000000
+    port "s7-r3-2"
+  ]
+  edge [
+    source 7
+    target 3
+    key 3
+    bandwidth 1000000000
+    port "s7-r3-3"
+  ]
+  edge [
+    source 7
+    target 3
+    key 4
+    bandwidth 1000000000
+    port "s7-r3-4"
+  ]
+  edge [
+    source 7
+    target 4
+    key 0
+    bandwidth 1000000000
+    port "s7-r4-0"
+  ]
+  edge [
+    source 7
+    target 4
+    key 1
+    bandwidth 1000000000
+    port "s7-r4-1"
+  ]
+  edge [
+    source 7
+    target 8
+    key 0
+    bandwidth 10000000000
+    port "s7-t8-0"
+  ]
+  edge [
+    source 7
+    target 9
+    key 0
+    bandwidth 10000000000
+    port "s7-t9-0"
+  ]
+  edge [
+    source 7
+    target 6
+    key 0
+    bandwidth 80000000000
+    port "s7-s6-0"
+  ]
+  edge [
+    source 8
+    target 7
+    key 0
+    bandwidth 10000000000
+    port "t8-s7-0"
+  ]
+  edge [
+    source 9
+    target 7
+    key 0
+    bandwidth 10000000000
+    port "t9-s7-0"
+  ]
+  edge [
+    source 10
+    target 6
+    key 0
+    bandwidth 10000000000
+    port "t10-s6-0"
+  ]
+  edge [
+    source 11
+    target 6
+    key 0
+    bandwidth 10000000000
+    port "t11-s6-0"
+  ]
+]
