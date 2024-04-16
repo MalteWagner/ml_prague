@@ -2,6 +2,9 @@ from os import listdir
 import tarfile
 
 def get_traffic(return_mode = "both", file_path = "data\gnnet-ch23-dataset-cbr-mb"):
+    '''
+        Returns path, flow for the whole train set
+    '''
     
     infos_path   = []
     infos_flow   = []
@@ -13,7 +16,7 @@ def get_traffic(return_mode = "both", file_path = "data\gnnet-ch23-dataset-cbr-m
                 if "experimentResults.txt" in member.name:                        
                     f=tar.extractfile(member)
                     for line in f.readlines():
-                        infos_path.append(line.decode('utf-8').split(";"))
+                        infos_path.append(line.decode('utf-8').strip("\n").split(";")[:-1])
                 if "experimentResultsFlows.txt" in member.name:                        
                     f=tar.extractfile(member)
                     for line in f.readlines():
@@ -31,10 +34,11 @@ def get_traffic(return_mode = "both", file_path = "data\gnnet-ch23-dataset-cbr-m
         "infos":first_ele[0],
         "data":data
     })
-
+        
     for i,sample in enumerate(samples_path):
         for j,path in enumerate(sample["data"]):
             samples_path[i]['data'][j] = path.split(",")
+
 
     samples_flow = []
     for i,sample in enumerate(infos_flow):
@@ -69,7 +73,9 @@ if __name__ == "__main__":
     dst = 3
     router = 5
 
+
     # Get path property: samples_path[sample_nr]['data'][path][property]
-    print(path[154]['data'][23][3])
+    print(float(path[154]['data'][23][3]))
+
     # Get flow property: samples_flow[sample_nr][path][flow_id][property]
     print(float(flow[154][23][1][3]))
