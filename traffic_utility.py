@@ -73,9 +73,16 @@ if __name__ == "__main__":
     dst = 3
     router = 5
 
+    # 5 Router --> 25 Verbindungsmöglichkeiten
+    # 0 -> 0  == 0
+    # 0 -> 1  == 1 
+    #  ....
+    # 1 -> 0  == 5
+    # path < N²
+
 
     # Get path property: samples_path[sample_nr]['data'][path][property]
     print(float(path[154]['data'][23][3]))
 
     # Get flow property: samples_flow[sample_nr][path][flow_id][property]
-    print(float(flow[154][23][1][3]))
+    print(float(flow[1200][1][0][3]))
