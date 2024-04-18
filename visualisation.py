@@ -14,7 +14,7 @@ def visualize_sample(sample_nr, dataset =  "data/gnnet-ch23-dataset-cbr-mb"):
             upper = int(folder.split("-")[-1].split(".")[0])
             lower = int(folder.split("-")[1].split("_")[-1])
             if upper >= sample_nr >= lower :
-                # print(dataset + "\\" + folder)
+                print(dataset + "/" + folder)
                 tar = tarfile.open(dataset + "/" + folder)
                 for member in tar.getmembers():
                     if "input" in member.name:                        
