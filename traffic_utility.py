@@ -1,7 +1,7 @@
 from os import listdir
 import tarfile
 
-def get_traffic(return_mode = "both", file_path = "data\gnnet-ch23-dataset-cbr-mb"):
+def get_traffic(return_mode = "both", file_path = "data/gnnet-ch23-dataset-cbr-mb"):
     '''
         Returns path, flow for the whole train set
     '''
@@ -11,7 +11,7 @@ def get_traffic(return_mode = "both", file_path = "data\gnnet-ch23-dataset-cbr-m
 
     for folder in listdir(file_path):
         if "results" in folder:
-            tar = tarfile.open(file_path + "\\" + folder)
+            tar = tarfile.open(file_path + "/" + folder)
             for member in tar.getmembers():
                 if "experimentResults.txt" in member.name:                        
                     f=tar.extractfile(member)
