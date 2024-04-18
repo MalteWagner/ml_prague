@@ -44,7 +44,7 @@ def get_traffic(return_mode = "both", file_path = "data/gnnet-ch23-dataset-cbr-m
     for i,sample in enumerate(infos_flow):
         samples_flow.append([])
         for j,ele in enumerate(sample):
-            samples_flow[i].append(0)
+            samples_flow[i].append(1)
             if ":" in ele:
                 samples_flow[i][j] = ele.split(":")
 

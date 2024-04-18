@@ -28,6 +28,7 @@ def visualize_sample(sample_nr, dataset =  "data/gnnet-ch23-dataset-cbr-mb"):
                 break
 
     return 0
+
 if __name__ == "__main__":
     sample_info = visualize_sample(182)
 
