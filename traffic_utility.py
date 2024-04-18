@@ -9,7 +9,7 @@ def get_traffic(return_mode = "both", file_path = "data/gnnet-ch23-dataset-cbr-m
     infos_path   = []
     infos_flow   = []
 
-    for folder in listdir(file_path):
+    for folder in sorted(listdir(file_path)):
         if "results" in folder:
             tar = tarfile.open(file_path + "/" + folder)
             for member in tar.getmembers():
