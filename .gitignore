@@ -65,3 +65,4 @@ plot_distributions.ipynb
 *.pdf
 change_testnames.py
 analyze_results.ipynb
+interactive.ipynb
