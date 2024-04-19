@@ -58,3 +58,9 @@ dmypy.json
 # Temporär
 data/gnnet-ch23-test-dataset
 tensorboard/
+verification_files/*
+plot_distributions.ipynb
+*.png
+*.pdf
+change_testnames.py
+analyze_results.ipynb

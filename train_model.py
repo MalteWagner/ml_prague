@@ -7,7 +7,7 @@ from models import Baseline_mb, Baseline_cbr_mb
 ds_path = "data\gnnet-ch23-dataset-cbr-mb-prepped_cv"  # Path to the dataset
 hyperparams = get_default_hyperparams()
 
-epochs = 5
+epochs = 40
 optimizer = hyperparams["optimizer"]
 loss = hyperparams["loss"]
 metrics = hyperparams["metrics"]
