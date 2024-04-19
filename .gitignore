@@ -55,7 +55,7 @@ dmypy.json
 # Virtual Env
 .venv/
 
-# Temporär
+# Für ML Prag
 data/gnnet-ch23-test-dataset
 tensorboard/
 verification_files/*
