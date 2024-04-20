@@ -27,8 +27,6 @@ Core of the notebook is the work of the Barcelone Neural Network Center speciali
  
  
 ### Contact:
-- **Name:** Massimiliano Kuck
-- **Email:** [massimiliano.kuck@soprasteria.com](massimiliano.kuck@soprasteria.com)
+Massimiliano Kuck | [massimiliano.kuck@soprasteria.com](massimiliano.kuck@soprasteria.com)
  
-- **Name:** Malte Wagner
-- **Email:** [malte.wagner@soprasteria.com](malte.wagner@soprasteria.com)
+Malte Wagner | [malte.wagner@soprasteria.com](malte.wagner@soprasteria.com)
